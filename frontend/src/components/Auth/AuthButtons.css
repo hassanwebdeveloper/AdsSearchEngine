@@ -14,17 +14,28 @@
 }
 
 .facebook-login-button {
+  width: 100%;
+  padding: 12px 24px;
   background-color: #1877f2;
   color: white;
   border: none;
-  padding: 12px 24px;
   border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.facebook-login-button:hover {
+  background-color: #166fe5;
+}
+
+.facebook-login-button i {
+  font-size: 18px;
 }
 
 .auth-error {

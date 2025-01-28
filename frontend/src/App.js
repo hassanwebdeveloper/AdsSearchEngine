@@ -21,16 +21,13 @@ function App() {
     setIsAuthenticated(false);
   };
 
-  // Hardcode the client ID temporarily for testing
-  const GOOGLE_CLIENT_ID = "253595159397-0uui61960q5gvv0lc66jmetv2gbsrqja.apps.googleusercontent.com";
-  
   console.log('Environment Variables in App:', {
     fromEnv: process.env.REACT_APP_GOOGLE_CLIENT_ID,
-    hardcoded: GOOGLE_CLIENT_ID
+    fb:process.env.REACT_APP_FACEBOOK_APP_ID
   });
 
   return (
-    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
       <Router>
         <div className="App">
           {isAuthenticated && <Header onLogout={handleLogout} />}
