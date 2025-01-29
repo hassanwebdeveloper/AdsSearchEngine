@@ -3413,3 +3413,16 @@ frontend/public/manifest.json
 frontend/public/robots.txt
 frontend/cert.pem
 frontend/key.pem
+backend/env
+frontend/build/static/css/main.02077aec.chunk.css
+frontend/build/static/css/main.02077aec.chunk.css.map
+frontend/build/static/js/2.fcc32f06.chunk.js
+frontend/build/static/js/2.fcc32f06.chunk.js.LICENSE.txt
+frontend/build/static/js/2.fcc32f06.chunk.js.map
+frontend/build/static/js/3.bc8f8742.chunk.js
+frontend/build/static/js/3.bc8f8742.chunk.js.map
+frontend/build/static/js/main.a0a390d0.chunk.js
+frontend/build/static/js/main.a0a390d0.chunk.js.map
+frontend/build/static/js/runtime-main.3d311120.js
+frontend/build/static/js/runtime-main.3d311120.js.map
+.env.example
