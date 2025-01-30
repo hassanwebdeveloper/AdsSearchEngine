@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import Login from './components/Auth/Login';
 import Header from './components/Header/Header';
+import Search from './components/Search/Search';
 import './App.css';
 
 function App() {
@@ -47,7 +48,17 @@ function App() {
                 path="/dashboard"
                 element={
                   isAuthenticated ? (
-                    <div>Dashboard (Coming Soon)</div>
+                    <Search />
+                  ) : (
+                    <Navigate to="/login" replace />
+                  )
+                }
+              />
+              <Route
+                path="/search"
+                element={
+                  isAuthenticated ? (
+                    <Search />
                   ) : (
                     <Navigate to="/login" replace />
                   )
